@@ -9,22 +9,61 @@
             margin:auto;
         }
 
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
 
+        li{
+            float: left;
+            /* barrier between links option */
+            border-right: 1px solid white;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px 16px;
+        }
+
+        li a:hover{
+            background-color: #111;
+        }
+        /* Optional Active Class for Awesom Navs */
+        .active{
+            background-color: darkgreen;
+        }
+
+        .advertise{
+            float: right;
+            background-color: red;
+        }
 
     </style>
 </head>
 <body>
 <div class="container">
     <ul>
-        <li><a href="#">Home</a></li>
+        <!-- The current page gets the active class -->
+        <li><a href="#" class="active">Home</a></li>
         <li><a href="#">Who We Are</a></li>
         <li><a href="#">Products</a></li>
         <li><a href="#">Mailing List</a></li>
         <li><a href="#">Contact Us</a></li>
-
-
-
+        <li class="advertise"><a href="#">Give Me Money</a></li>
     </ul>
+
+
+    <br />
+    <br />
+    <!-- <ul>
+        <li><a href="http://www.google.com">Gooogle</a></li>
+    </ul> -->
 </div>
 </body>
 </html>
